@@ -105,7 +105,7 @@ async function runEslint () {
     .filter(path => extensions.some(e => path.endsWith(`.${e}`)))
 
   const eslintVersionSevenOrGreater = semver.gte(eslintVersion, '7.0.0')
-
+  console.log(eslintVersionSevenOrGreater)
   const report = eslintVersionSevenOrGreater 
     ? await gatherReportForEslintSevenOrGreater(paths)
     : gatherReportForEslintSixOrLower(paths)
