@@ -12,7 +12,8 @@
   "dependencies": {
     "@actions/exec": "^1.1.1",
     "@actions/github": "^1.1.0",
-    "@actions/io": "^1.1.2"
+    "@actions/io": "^1.1.2",
+    "semver": "^7.3.8"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.34.0"
